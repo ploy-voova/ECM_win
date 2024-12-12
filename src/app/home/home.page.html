@@ -1,20 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<!-- Home -->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-grid class="curved-shape">
+  <ion-row style="z-index: 2;">
+    <ion-col style="z-index: 2; display: flex; " size-xs="6">
+      <ion-row>
+        <ion-img class="logo" src="../../assets/image/ecmlogo.png"></ion-img>
+      </ion-row>
+    </ion-col>
+    <ion-col style="z-index: 2; margin: 0;" size-xs="5">
+      <ion-row class="" style="display: flex;  justify-content: end; align-items: end;">
+        <p class="set-name">Hello, Earn</p>
+      </ion-row>
+      <ion-row>
+        <ion-searchbar class="custom" placeholder="Search Bookings.."></ion-searchbar>
+      </ion-row>
+    </ion-col>
+    <ion-col style="z-index: 2; display: flex; align-items: center;" size-xs="1">
+      <ion-icon class="icont" name="hourglass-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <swiper-container  style="z-index: 2; margin-top: -11%;">
+    
+    <swiper-slide>
+      <ion-card class="card-container">
+        <ion-card-header (click)="show()" class="cardQ">
+          <h1>Qute ID : 68130</h1>
+          <h2>Sale : owen</h2>
+        </ion-card-header>
+      </ion-card>
+    </swiper-slide>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+    <swiper-slide>
+      <ion-card class="card-container">
+        nnn
+      </ion-card>
+    </swiper-slide>
+
+    <swiper-slide>
+      <ion-card class="card-container">
+        nnn
+      </ion-card>
+    </swiper-slide>
+  </swiper-container>
+
+
+</ion-grid>

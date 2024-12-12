@@ -9,4 +9,15 @@ export class HomePage {
 
   constructor() {}
 
+  slideOpts = {
+    initialSlide: 1,
+    speed: 400,
+    loop: true,
+  }
+
+  show(){
+    console.log(localStorage.getItem('keyLogin'));
+  }
+  
+  
 }
